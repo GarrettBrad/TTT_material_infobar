@@ -80,7 +80,7 @@ function ttt_role()
 
    elseif round_state == 3 then
       if LocalPlayer():IsTraitor() then
-         draw.SimpleText("TRAITOR", "TTTHUDFOUNT", 80, ScrH() - y, COLOR_RED,
+         draw.SimpleText("Traitor", "TTTHUDFOUNT", 80, ScrH() - y, COLOR_RED,
             TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
          if math.ceil( CurTime() ) % 7 <= 2 then
             draw.SimpleText(time, "TTTHUDFOUNT", 11, ScrH() - y,
@@ -95,7 +95,7 @@ function ttt_role()
             end
          end
       elseif LocalPlayer():IsDetective() then
-         draw.SimpleText("DETECTIVE", "TTTHUDFOUNT", 75, ScrH() - y,
+         draw.SimpleText("Detective", "TTTHUDFOUNT", 75, ScrH() - y,
             Color(000,238,255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
          
          if Innocent_Time == "00:00" then
@@ -106,7 +106,7 @@ function ttt_role()
              Color( 255, 255, 255), TEXT_ALIGN_LEFT,TEXT_ALIGN_TOP)
          end
       else
-         draw.SimpleText("INNOCENT", "TTTHUDFOUNT", 80, ScrH() - y, COLOR_WHITE,
+         draw.SimpleText("Innocent", "TTTHUDFOUNT", 80, ScrH() - y, COLOR_WHITE,
             TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
    
          if Innocent_Time == "00:00" then
