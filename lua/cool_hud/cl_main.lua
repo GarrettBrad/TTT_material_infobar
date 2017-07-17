@@ -80,7 +80,7 @@ function ttt_role()
 
    elseif round_state == 3 then
       if LocalPlayer():IsTraitor() then
-         draw.SimpleText("Traitor", "TTTHUDFOUNT", 80, ScrH() - y, COLOR_RED,
+         draw.SimpleText("Traitor", "TTTHUDFOUNT", 100, ScrH() - y, COLOR_RED,
             TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
          if math.ceil( CurTime() ) % 7 <= 2 then
             draw.SimpleText(time, "TTTHUDFOUNT", 11, ScrH() - y,
